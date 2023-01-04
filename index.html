@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <!--Link pra tirar qualquer estilização do próprio css:-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+        integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav_div one">
+            <i class="fa-solid fa-h logo"></i>
+            <p><strong>Helen</strong>Books</p>
+        </div>
+        <div class="nav_div two">
+            <a href="#" class="nav_link">Categorias</a>
+            <a href="#" class="nav_link">Favoritos</a>
+            <a href="#" class="nav_link">Meus Livros</a>
+        </div>
+        <div class="nav_div three">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </nav>
+    <header class="header">
+        <h1>Cadastre-se</h1>
+    </header>
+
+    <main class="container">
+        <h2>Informe seus dados</h2>
+
+        <div class="content_data">
+            <h3>Dados pessoais</h3>
+
+            <label for="name">Nome completo</label>
+            <input type="text" id="name" class="input_name">
+
+            <div class="born_contact">
+                <div>
+                    <label for="date">Nascimento</label>
+                    <input type="date" id="date" class="input_date">
+                </div>
+
+                <div>
+                    <label for="contact">Contato</label>
+                    <input type="tel" id="tel" class="input_tel" placeholder="(XX) XXXXX-XXXX">
+                </div>
+                
+    
+                
+            </div>
+           
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input_email">
+        </div>
+
+        <div class="content_address">
+            <h3>Endereço</h3>
+
+            <label for="cep">CEP</label>
+            <input type="number" id="cep" class="input_cep">
+
+            <label for="address">Endereço</label>
+            <input type="text" id="address" class="input_address">
+
+            <div class="address_contact">
+                <div>
+                    <label for="number">Número</label>
+                    <input type="number" id="number" class="input_number">
+                </div>
+    
+                <div>
+                    <label for="complement">Complemento</label>
+                    <input type="text" id="complement" class="input_complement">
+                </div>
+            </div>
+
+            <label for="district">Bairro</label>
+            <input type="text" id="district" class="input_district">
+
+            <div class="address_contact">
+                <div>
+                    <label for="city">Cidade</label>
+                    <input type="text" id="city" class="input_city">
+                </div>
+                
+                <div><label for="uf">UF</label>
+                    <select id="uf">
+                        <option value="rs" id="uf" class="option_uf">RS</option>
+                    </select></div>
+            </div>
+
+            <button id="sendForm" class="sendForm">Fazer cadastro</button>
+        </div>
+    </main>
+
+    <hr>
+
+    <footer class="footer">
+        <div class="footer_div logo_footer">
+            <i class="fa-solid fa-h logo"></i>
+            <h3>Helen's Book</h3>
+        </div>
+
+        <div class="footer_div">
+            <p class="sub_title">Educação</p>
+
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Code House</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+        </div>
+
+        <div class="footer_div">
+            <p class="sub_title">Educação online</p>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Code House</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+        </div>
+
+        <div class="footer_div">
+            <p class="sub_title">Comunidade</p>
+
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-face-smile"></i>
+                <a href="#">Plataform</a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>

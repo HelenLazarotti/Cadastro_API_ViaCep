@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Average&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Average', serif;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5em;
+    justify-content: space-around;
+}
+.nav_div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    margin-right: 0.3em;
+    color: #EB455F;
+}
+.nav_div p strong{
+    font-weight: bold;
+}
+.two{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.nav_link{
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #2B3467;
+}
+.nav_link:hover{
+    color: #EB455F;
+}
+.three i {
+    font-size: 24px;
+    margin-left:1em;
+    margin-right: 1em;
+    color: #EB455F;
+}
+.three i:hover{
+    cursor: pointer;
+    color: #2B3467;
+}
+.header{
+    background-color: #2B3467;
+    color: #fff;
+    padding: 1.5em;
+    text-align: center;
+    width: 100%;
+}
+.header h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto auto;
+    margin-top: 3em;
+}
+.container h2{
+    font-size: 22px;
+    color: #EB455F;
+    margin-bottom: 1.5em;
+}
+.content_data, .content_address{
+    display: flex;
+    flex-direction: column;
+}
+.content_data{
+    margin-bottom: 2em;
+}
+.content_data h3, .content_address h3{
+    font-size: 18px;
+    margin-bottom: 1em;
+    color:#2B3467
+}
+.born_contact, .address_contact{
+    display: flex;
+    flex-direction: row;
+}
+.born_contact div, .address_contact div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+.content_data label, .content_address label{
+    font-size: 16px;
+    color:#2B3467;
+    margin-bottom: 0.3em;
+}
+.content_data input, .content_address input, .address_contact select{
+    border-radius: 2em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid #EB455F;
+}
+.content_address button{
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #2B3467;
+    color: #fff;
+    border-radius: 2em;
+    border: none;
+}
+.content_address button:hover{
+    background-color: #EB455F;
+}
+hr{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+.footer_div h3{
+    font-size: 20px;
+    color:#2B3467;
+}
+.logo_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub_title{
+    font-size: 16px;
+    margin-bottom: 1em;
+    color: #EB455F;
+}
+.footer_div div{
+    margin-bottom: 0.5em;
+}
+.footer_div div a{
+    text-decoration: none;
+    color: #2B3467;
+    margin-left: 0.2em;
+}
+.footer_div div a:hover{
+    color:#EB455F;
+}
