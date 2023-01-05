@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Average&display=swap');
+html, body {
+     min-height: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Average', serif;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto auto;
+    margin-top: 3em;
+}
+.container h2{
+    font-size: 22px;
+    color: #EB455F;
+    margin-bottom: 1.5em;
+}
+.content_data, .content_address{
+    display: flex;
+    flex-direction: column;
+}
+.content_data{
+    margin-bottom: 2em;
+}
+.content_data h3, .content_address h3{
+    font-size: 18px;
+    margin-bottom: 1em;
+    color:#2B3467
+}
+.born_contact, .address_contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.born_contact div, .address_contact div{
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+}
+.content_data label, .content_address label{
+    font-size: 16px;
+    color:#2B3467;
+    margin-bottom: 0.3em;
+}
+.content_data input, .content_address input, .address_contact select{
+    border-radius: 2em;
+    padding: 0.6em;
+    margin-bottom: 1em;
+    border: 1px solid #EB455F;
+}
+.content_address button{
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #2B3467;
+    color: #fff;
+    border-radius: 2em;
+    border: none;
+}
+.content_address button:hover{
+    background-color: #EB455F;
+}
+hr{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}

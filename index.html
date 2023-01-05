@@ -13,27 +13,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav_div one">
-            <i class="fa-solid fa-h logo"></i>
-            <p><strong>Helen</strong>Books</p>
-        </div>
-        <div class="nav_div two">
-            <a href="#" class="nav_link">Categorias</a>
-            <a href="#" class="nav_link">Favoritos</a>
-            <a href="#" class="nav_link">Meus Livros</a>
-        </div>
-        <div class="nav_div three">
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-regular fa-user"></i>
-        </div>
-    </nav>
     <header class="header">
+        <nav class="nav">
+            <div class="nav_div one">
+                <i class="fa-solid fa-h logo"></i>
+                <p><strong>Helen</strong>Books</p>
+            </div>
+            <div class="nav_div two">
+                <a href="#" class="nav_link">Categorias</a>
+                <a href="#" class="nav_link">Favoritos</a>
+                <a href="#" class="nav_link">Biblioteca</a>
+            </div>
+            <div class="nav_div three">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+        </nav>
         <h1>Cadastre-se</h1>
     </header>
 
@@ -56,12 +58,8 @@
                     <label for="contact">Contato</label>
                     <input type="tel" id="tel" class="input_tel" placeholder="(XX) XXXXX-XXXX">
                 </div>
-                
-    
-                
             </div>
-           
-
+            
             <label for="email">E-mail</label>
             <input type="email" id="email" class="input_email">
         </div>
@@ -101,14 +99,16 @@
                         <option value="rs" id="option_uf" class="option_uf"></option>
                     </select></div>
             </div>
-
+            
             <button id="sendForm" class="sendForm">Fazer cadastro</button>
+            <p id="error"></p>
         </div>
     </main>
 
     <hr>
 
     <footer class="footer">
+        <div class="footer_container">
         <div class="footer_div logo_footer">
             <i class="fa-solid fa-h logo"></i>
             <h3>Helen's Book</h3>
@@ -172,9 +172,8 @@
             </div>
 
         </div>
+    </div>
     </footer>
-
-    <script src="js/validatePerson.js"></script>
     <script src="js/validateCep.js"></script>
 </body>
 

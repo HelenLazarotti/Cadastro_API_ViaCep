@@ -1,12 +1,11 @@
-//pego meu btn:
-const btn = document.querySelector('#sendForm');
+//pego campo input do cep:
+const value_cep = document.querySelector('#cep');
 
-btn.addEventListener('click', (e) => {
+value_cep.addEventListener('focusout', (e) => {
     //cancela envio:
     e.preventDefault();
 
-    //pego campo input do cep:
-    const value_cep = document.querySelector('#cep');
+    //pego o valor digitado no input
     const input_cep = value_cep.value;
     //console.log(input_cep)
 
@@ -14,18 +13,23 @@ btn.addEventListener('click', (e) => {
     const url_api = `https://viacep.com.br/ws/${input_cep}/json/`;
 
     //promessa q url ta retornando algo:
-    fetch(url_api).then(resp => {
-        //transformo em json:
-        return resp.json();
+    fetch(url_api)
+        .then(resp => {
+            //transformo em json:
+            return resp.json();
 
-    }).then(data => {
-        fillInputs(data);
-    })
+        }).then(data => {
+            fillInputs(data);
+
+        }).catch(err => {
+
+            console.log(err)
+        })
 })
 
 //crio função pra preencher os outros inputs:
-function fillInputs(data){
-    console.log(data)
+function fillInputs(data) {
+    //console.log(data)
 
     //pego all inputs que vou manipular:
     const number = document.querySelector('#number');
